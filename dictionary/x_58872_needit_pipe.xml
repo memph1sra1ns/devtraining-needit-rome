@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Pipe" max_length="40" name="x_58872_needit_pipe" sizeclass="4" type="collection">
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element choice="3" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="metal" sequence="100" value="metal"/>
+                <element inactive_on_update="false" label="carbon" sequence="200" value="carbon"/>
+                <element inactive_on_update="false" label="mg" sequence="300" value="mg"/>
+            </choice>
+        </element>
+        <element display="true" label="Vendor" max_length="32" name="vendor" reference="core_company" type="reference"/>
+        <index name="index">
+            <element name="vendor"/>
+        </index>
+    </element>
+</database>

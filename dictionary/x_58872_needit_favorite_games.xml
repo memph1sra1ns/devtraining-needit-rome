@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Favorite Games" max_length="40" name="x_58872_needit_favorite_games" sizeclass="1" type="collection">
+        <element label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="Rating" max_length="40" name="rating" type="integer"/>
+        <element label="Release Date" max_length="100" name="release_date" type="glide_date"/>
+    </element>
+</database>
